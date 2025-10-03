@@ -1,0 +1,19 @@
+site_name: MyBasicFunction
+
+
+nav:
+  - Home: index.md
+  - Getting Started: getting_started.md
+  - How to Guides: guides.md
+  - Concepts & Explanations: concepts.md
+  - API & References: reference.md
+  - Functions:
+      - my_adder: my_adder.md
+      - my_thermostat: my_thermostat.md
+      - have_digits: have_digits.md
+      - area_of_rectangle: area_of_rectangle.md
+      - perimeter_of_rectangle: perimeter_of_rectangle.md
+
+plugins:
+  - search
+  - mkdocstrings
