@@ -16,7 +16,7 @@ nav:
 
 plugins:
   - search
-
+  - mkdocs
 
 jobs:
   build:
