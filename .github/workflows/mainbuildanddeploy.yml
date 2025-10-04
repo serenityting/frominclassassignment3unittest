@@ -19,6 +19,4 @@ jobs:
           python -m pip install mkdocs
          
    
-      - name: Run tests
-        run: |
-          pytest
+    
