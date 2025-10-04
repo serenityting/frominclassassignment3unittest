@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,7 +16,9 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
-      - name: Build documentation
-        run: mkdocs build --config-file mkdocs.yml
-    
+          python -m pip install mkdocs
+         
+   
+      - name: Run tests
+        run: |
+          pytest
